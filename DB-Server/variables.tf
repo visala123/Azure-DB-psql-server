@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  default = "psql-rg"
+  default = "rg_rds_psql"
 }
 
 variable "location" {
