@@ -13,17 +13,17 @@ This repository contains Terraform code to provision an **Azure Database for Pos
  
 ```
 
-terraform-s3-automation/
+AZURE-DB-PSQL-Server/
 
-├── main.tf                # Defines the target S3 bucket resource
+├── main.tf                # Defines the Azure Database for PostgreSQL - Flexible Server resource
 
 ├── provider.tf            # AWS provider configuration
 
-├── variables.tf           # Input variables (bucket name, region)
+├── variables.tf           # Input variables 
 
 ├── terraform.tfvars       # Variable values for deployment
 
-├── outputs.tf             # Output values like bucket name/ARN
+├── outputs.tf             # Output values 
 
 ├── backend.tf             # Stores Terraform state in S3
 
@@ -31,7 +31,7 @@ terraform-s3-automation/
 
     └── workflows/
 
-        └── terraform.yml  # GitHub Actions automation workflow
+        └── deploy.yml  # GitHub Actions automation workflow
 
 ```
  
