@@ -43,7 +43,7 @@ AZURE-DB-PSQL-Server/
 
 In your GitHub repo, go to **Settings → Secrets and Variables → Actions** and add:
 
-AZURE_CREDENTIALS  and the value is in the json format
+1. AZURE_CREDENTIALS  and the value is in the json format
 ```
 {
   "clientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
@@ -52,7 +52,7 @@ AZURE_CREDENTIALS  and the value is in the json format
   "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
 }
 ```
-
+2. PSQL_ADMIN_PASSWORD   value-you can give your password (psqlpassword)
 These are required for the GitHub Actions workflow to authenticate with Azure.
 How you get these : in shell run the command :
 
